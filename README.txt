@@ -1,1 +1,3 @@
-README file just for testing
+# thememe
+
+A theme by Jarkko Ronkainen based on Hybrid Core
