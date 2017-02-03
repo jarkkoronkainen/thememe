@@ -4,10 +4,14 @@ Theme URI: localhost/WP/wp-content/themes
 Author: jarkko
 Author URI: 
 Description: A theme by Jarkko Ronkainen, Using Hybrid Core
-Version: 1
-License: free
+Version: 0.1
+License: free 4 all
 License URI:
 Tags: simple, custom
 Text Domain: thememe
 */
 
+
+#footer .credit{
+	font-size: 30px;
+}
