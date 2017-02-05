@@ -25,10 +25,11 @@
 				</div><!-- #branding -->
 
 			<?php endif; // End check for header text. ?>
+			
 
 		</header><!-- #header -->
 
-		<?php hybrid_get_menu( 'secondary' ); // Loads the menu/secondary.php template. ?>
+		
 
 		<?php if ( get_header_image() && ! display_header_text() ) : // If there's a header image but no header text. ?>
 
@@ -41,5 +42,9 @@
 		<?php endif; // End check for header image. ?>
 
 		<div id="main" class="main">
+		
+		<?php hybrid_get_menu( 'secondary' ); // Loads the menu/secondary.php template. ?>
+		
+		<?php hybrid_get_menu( 'breadcrumbs' ); // Loads the menu/breadcrumbs.php template. ?>
 
-			<?php hybrid_get_menu( 'breadcrumbs' ); // Loads the menu/breadcrumbs.php template. ?>
+			

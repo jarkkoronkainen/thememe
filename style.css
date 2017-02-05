@@ -223,7 +223,15 @@ img.size-full {}
  * Layout
  * --------------------------------------------------------------------------- */
 
-	#container {}
+	#container {
+		width: 1045px;
+		margin: 0 auto 0 auto;
+		background-position: 0 181px;
+		background-repeat: repeat-y;
+		text-align: left;
+		clear: none;
+
+	}
 
 		.layout-1c #container {}
 		.layout-2c-l #container {}
@@ -233,6 +241,7 @@ img.size-full {}
 		.layout-3c-c #container {}
 
 		#header {}
+		
 
 		#menu-primary {}
 
@@ -240,7 +249,9 @@ img.size-full {}
 
 		#main {}
 
-			#content {}
+			#content {
+				background-color: #878787;
+			}
 
 			#sidebar-primary {}
 
@@ -257,8 +268,14 @@ img.size-full {}
  * --------------------------------------------------------------------------- */
 
 #header {}
+.header-image{}
 
-	#branding {}
+
+	#branding {
+		width: 1033px;
+		margin: 0 auto 0 auto;
+	}
+	
 
 		#site-title {}
 
@@ -633,7 +650,7 @@ img.size-full {}
 	#footer .copyright {}
 
 	#footer .credit {
-		font-size: 30px;
+		
 	}
 
 	#footer a {}
