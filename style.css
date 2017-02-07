@@ -26,13 +26,18 @@ html {}
 /* === Body === */
 
 body {
+	font: 13px Sans-Serif;
 }
 
 /* === Links === */
 
-a {}
+a {
+	color: #ccf8ff;
+}
 
-	a:hover {}
+	a:hover {
+		color: #023991;
+	}
 
 /* === Headers === */
 
@@ -226,8 +231,6 @@ img.size-full {}
 	#container {
 		width: 1045px;
 		margin: 0 auto 0 auto;
-		background-position: 0 181px;
-		background-repeat: repeat-y;
 		text-align: left;
 		clear: none;
 
@@ -250,7 +253,11 @@ img.size-full {}
 		#main {}
 
 			#content {
-				background-color: #878787;
+				background-color: #666666;
+				border-radius: 15px;
+				border: 1px solid #ffffff;
+				padding: 20px; 
+				box-shadow: 3px 3px 3px #303030;
 			}
 
 			#sidebar-primary {}
@@ -268,7 +275,9 @@ img.size-full {}
  * --------------------------------------------------------------------------- */
 
 #header {}
-.header-image{}
+.header-image{
+	width: 100%;
+}
 
 
 	#branding {
@@ -308,19 +317,44 @@ img.size-full {}
 
 /* ====== Secondary Menu ====== */
 
-#menu-secondary {}
+#menu-secondary {
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
 
 	#menu-secondary .wrap {}
 
-		#menu-secondary ul {}
+		#menu-secondary ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #333;
+		}
 
 			#menu-secondary ul ul {}
 
-			#menu-secondary li {}
+			#menu-secondary li {
+				float: left;
+				border-right: 1px solid #bbb;
+			}
+			
+			#menu-secondary li:last-child {
+				border-right: none;
+			}
+			
 			#menu-secondary li.current-menu-item {}
 
-				#menu-secondary li a {}
-				#menu-secondary li a:hover {}
+				#menu-secondary li a {
+					display: block;
+					color: white;
+					text-align: center;
+					padding: 14px 16px;
+					text-decoration: none;
+				}
+				#menu-secondary li a:hover {
+					background-color: #111;
+				}
 
 /* ====== Subsidiary Menu ====== */
 
@@ -341,14 +375,47 @@ img.size-full {}
  * --------------------------------------------------------------------------- */
 
 /* ====== BREADCRUMBS ====== */
+.trail-item{
+	display: inline-block;
+    float: none;
+	margin-right: 10px;
+	font: 18px Sans-Serif;
+}
+
+.trail-item:after{
+	content: '\3E';
+	margin-left: 0.3em;
+}
+
+.trail-end:after{
+	content: " ";
+}
+
+.trail-browse{
+	margin-bottom: 0;
+}
+
+.trail-browse, h2{
+	font: 12px Sans-Serif;
+}
+
+.archive-title, h1{
+	
+}
+
+
 
 .breadcrumb-trail {}
+
 
 	.breadcrumb-trail .trail-begin {}
 
 	.breadcrumb-trail .trail-end {}
 
 	.breadcrumb-trail .sep {}
+
+
+
 
 	.breadcrumb-trail a {}
 	.breadcrumb-trail a:hover {}
@@ -360,7 +427,12 @@ img.size-full {}
 
 	/* === Post Header === */
 
-	.entry-header {}
+	.entry-header {
+		background-color: #414a59;
+		border-radius: 10px;
+		padding: 0 10px 0 10px;
+		text-align: center;
+	}
 
 		.entry-title {}
 
@@ -530,15 +602,32 @@ img.size-full {}
 
 /* ====== General ====== */
 
-.sidebar {}
+.sidebar {		
+				width: 50%;
+				background-color: #666666;
+				border-radius: 15px;
+				border: 1px solid white;
+				padding: 20px; 
+				margin-top: 10px;
+				margin-bottom: 10px;
+				box-shadow: 3px 3px 3px #303030;
+}
 
 	.widget {}
 
-		.widget-title {}
+		.widget-title {
+			background-color: #414a59;
+			border-radius: 10px;
+			padding: 0 10px 0 10px;
+			text-align: center;
+		}
+		
 
 /* ====== Specific ====== */
 
-#sidebar-primary {}
+#sidebar-primary {
+	
+}
 
 #sidebar-secondary {}
 

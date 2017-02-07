@@ -243,7 +243,7 @@ class Breadcrumb_Trail {
 		$defaults = array(
 			'browse'              => esc_html__( 'Browse:',                               'hybrid-core' ),
 			'aria_label'          => esc_attr_x( 'Breadcrumbs', 'breadcrumbs aria label', 'hybrid-core' ),
-			'home'                => esc_html__( 'Home',                                  'hybrid-core' ),
+			'home'                => esc_html__( 'Etusivu',                                  'hybrid-core' ),
 			'error_404'           => esc_html__( '404 Not Found',                         'hybrid-core' ),
 			'archives'            => esc_html__( 'Archives',                              'hybrid-core' ),
 			// Translators: %s is the search query. The HTML entities are opening and closing curly quotes.
