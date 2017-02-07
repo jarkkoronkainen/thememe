@@ -268,7 +268,7 @@ img.size-full {}
 
 		#sidebar-subsidiary {}
 
-		#footer {}
+		
 
 /**
  * Header
@@ -734,9 +734,14 @@ img.size-full {}
  * Footer
  * --------------------------------------------------------------------------- */
 
-#footer {}
+#footer {
+	
+}
 
-	#footer .copyright {}
+
+	#footer .copyright {
+		
+	}
 
 	#footer .credit {
 		
