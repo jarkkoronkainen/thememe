@@ -192,7 +192,11 @@ img.size-full {}
 
 /* === Thumbnails === */
 
-.thumbnail {}
+.thumbnail {
+	display: block;
+    margin: 0 auto;
+	margin-bottom: 5px;
+}
 
 /* === Captions === */
 
@@ -375,24 +379,49 @@ img.size-full {}
  * --------------------------------------------------------------------------- */
 
 /* ====== BREADCRUMBS ====== */
+.trail-items{
+	margin-top: 0px;
+	border-radius: 8px;
+	border-top-left-radius: 0px;
+	padding: 0px;
+	margin-left: 0px;
+	
+}
+
 .trail-item{
+	background-color: #686868;
 	display: inline-block;
     float: none;
-	margin-right: 10px;
+	margin-right: 0px;
 	font: 18px Sans-Serif;
+	color: #3d3d3c;
+	padding-right: 0px;
+	padding-left: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	
 }
 
 .trail-item:after{
 	content: '\3E';
 	margin-left: 0.3em;
+
 }
 
 .trail-end:after{
 	content: " ";
+	padding-right: 10px;
+	
 }
 
 .trail-browse{
+	padding: 3px;
+	width: 8%;
 	margin-bottom: 0;
+	margin-top: 5px;
+	background-color: #414a59;
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
 }
 
 .trail-browse, h2{
@@ -400,17 +429,24 @@ img.size-full {}
 }
 
 .archive-title, h1{
-	
+	position: relative;
+	width: 30%;
+		background-color: #414a59;
+		border-radius: 10px;
+		padding: 0 10px 0 10px;
+		text-align: center;
+		margin: auto;
+		margin-bottom: 30px;
+		
 }
-
 
 
 .breadcrumb-trail {}
 
 
-	.breadcrumb-trail .trail-begin {}
+	.breadcrumb-trail .trail-begin {border-top-left-radius: 0px; border-bottom-left-radius: 5px;}
 
-	.breadcrumb-trail .trail-end {}
+	.breadcrumb-trail .trail-end {border-top-right-radius: 5px; border-bottom-right-radius: 5px;}
 
 	.breadcrumb-trail .sep {}
 
@@ -426,17 +462,38 @@ img.size-full {}
 .sticky {}
 
 	/* === Post Header === */
+	.entry {
+	
+	}
+	
 
 	.entry-header {
+		position: relative;
+		width: 30%;
 		background-color: #414a59;
 		border-radius: 10px;
 		padding: 0 10px 0 10px;
 		text-align: center;
+		margin: auto;
+		margin-bottom: 30px;
+		
 	}
 
-		.entry-title {}
+		.entry-title {
+			position: relative;
+			width: auto;
+			background-color: #414a59;
+			border-radius: 10px;
+			padding: 0 10px 0 10px;
+			text-align: center;
+			margin: auto;
+			margin-bottom: 10px;
+			
+		}
 
-			.entry-title a {}
+			.entry-title a {
+				font-size: 20px;
+			}
 			.entry-title a:hover {}
 
 		.entry-byline {}
@@ -450,7 +507,9 @@ img.size-full {}
 
 	.entry-content {}
 
-	.entry-summary {}
+	.entry-summary {
+		display: none;
+	}
 
 	/* === Post Footer === */
 
@@ -658,7 +717,9 @@ img.size-full {}
 
 	.comments-closed {}
 
-	.comments-closed.pings-open {}
+	.comments-closed.pings-open {
+		display: none;
+	}
 
 	/* === Comment list === */
 
