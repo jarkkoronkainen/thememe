@@ -24,6 +24,9 @@ new Hybrid();
 // Do theme setup on the 'after_setup_theme' hook.
 add_action( 'after_setup_theme', 'hybrid_base_theme_setup', 5 );
 
+
+
+
 /**
  * Theme setup function.  This function adds support for theme features and defines the default theme
  * actions and filters.
@@ -51,6 +54,9 @@ function hybrid_base_theme_setup() {
 
 	// Automatically add feed links to <head>.
 	add_theme_support( 'automatic-feed-links' );
+	
+	// Add cleaner gallery support
+	add_theme_support( 'cleaner-gallery' );
 
 	// Post formats.
 	add_theme_support(
@@ -64,3 +70,4 @@ function hybrid_base_theme_setup() {
 	// Handle content width for embeds and images.
 	hybrid_set_content_width( 1280 );
 }
+

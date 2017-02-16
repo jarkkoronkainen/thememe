@@ -166,7 +166,7 @@ class Breadcrumb_Trail {
 
 			// Add 'browse' label if it should be shown.
 			if ( true === $this->args['show_browse'] )
-				$breadcrumb .= sprintf( '<h2 class="trail-browse">%s</h2>', $this->labels['browse'] );
+				$breadcrumb .= sprintf( '<h3 class="trail-browse-fixed">%s</h3>', $this->labels['browse'] );
 
 			// Open the unordered list.
 			$breadcrumb .= '<ul class="trail-items" itemscope itemtype="http://schema.org/BreadcrumbList">';

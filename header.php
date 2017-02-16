@@ -16,6 +16,7 @@
 		<?php hybrid_get_menu( 'primary' ); // Loads the menu/primary.php template. ?>
 
 		<header <?php hybrid_attr( 'header' ); ?>>
+		<?php hybrid_get_sidebar( 'subsidiary' ); // Loads the sidebar/subsidiary.php template. ?>
 
 			<?php if ( display_header_text() ) : // If user chooses to display header text. ?>
 
@@ -40,10 +41,11 @@
 			<img class="header-image" src="<?php header_image(); ?>" width="<?php echo absint( get_custom_header()->width ); ?>" height="<?php echo absint( get_custom_header()->height ); ?>" alt="" />
 
 		<?php endif; // End check for header image. ?>
-
+		
+		
 		<div id="main" class="main">
 		
-		<?php hybrid_get_menu( 'breadcrumbs' ); // Loads the menu/breadcrumbs.php template. ?>
+		
 		<?php hybrid_get_menu( 'secondary' ); // Loads the menu/secondary.php template. ?>
 		
 		

@@ -8,6 +8,8 @@
 		
 		
 	<?php endif; // End check for multi-post page. ?>
+	
+	
 
 	<?php if ( have_posts() ) : // Checks if any posts were found. ?>
 
@@ -33,7 +35,16 @@
 		<?php locate_template( array( 'content/error.php' ), true ); // Loads the content/error.php template. ?>
 
 	<?php endif; // End check for posts. ?>
+	
+	<?php hybrid_get_menu( 'breadcrumbs' ); // Loads the menu/breadcrumbs.php template. ?>
+	
+<?php hybrid_get_sidebar( 'primary' ); // Loads the sidebar/primary.php template. ?>
+
+<?php get_footer(); // Loads the footer.php template. ?>
+
+
 
 </main><!-- #content -->
 
-<?php get_footer(); // Loads the footer.php template. ?>
+
+
